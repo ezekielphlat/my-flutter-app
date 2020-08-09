@@ -14,7 +14,16 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.green[600],
       ),
       body: Center(
-        child:Image.asset('assets/nature-3.jpg') // can also use Image.network
+        child:RaisedButton.icon(
+          onPressed: (){
+            print('You are doing well');
+          },
+          icon: Icon(
+            Icons.mail
+          ),
+          label: Text('Send Email'),
+          color: Colors.green,
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
