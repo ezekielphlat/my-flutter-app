@@ -14,16 +14,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.green[600],
       ),
       body: Center(
-        child: Text(
-          'Hello Ephlat',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.blueGrey,
-            fontFamily: 'lemonada',
-          ),
-        ),
+        child:Image.asset('assets/nature-3.jpg') // can also use Image.network
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
