@@ -13,37 +13,44 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Row(
         children: [
-          Container(
-            color: Colors.blue,
-            child: Row(
-              children: [
-                Text("Hello, "),
-                Text("My people")
-              ],
+          Expanded(
+              child: Image.asset('assets/nature-1.jpg'),
+            flex: 3,
+          ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.orange,
+              child: Text('1'),
             ),
           ),
-
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('one'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.pinkAccent,
-            child: Text('two'),
-          ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.amber,
-            child: Text('three'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.blue,
+              child: Text('3'),
+            ),
           ),
         ],
-      )
+        ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Text("Click"),
+        backgroundColor: Colors.orange,
+      ),
+
 
     );
   }
