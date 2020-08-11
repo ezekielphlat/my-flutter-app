@@ -13,23 +13,37 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[600],
       ),
-      body: Center(
-        child:RaisedButton.icon(
-          onPressed: (){
-            print('You are doing well');
-          },
-          icon: Icon(
-            Icons.mail
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            color: Colors.blue,
+            child: Row(
+              children: [
+                Text("Hello, "),
+                Text("My people")
+              ],
+            ),
           ),
-          label: Text('Send Email'),
-          color: Colors.green,
-        )
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text('Click'),
-        backgroundColor: Colors.green,
-      ),
+
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: Text('one'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.pinkAccent,
+            child: Text('two'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.amber,
+            child: Text('three'),
+          ),
+        ],
+      )
 
     );
   }
